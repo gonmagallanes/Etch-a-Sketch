@@ -8,6 +8,13 @@ body {
   background-color: #717c89;
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 header {
   color: #adf6b1;
   display: flex;
@@ -25,7 +32,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 500px;
+  height: 500px;
   border: 1px solid black;
 }
 
@@ -36,3 +44,4 @@ header {
   flex-direction: column;
   padding-bottom: 3vh;
 }
+
