@@ -58,12 +58,19 @@ button.addEventListener("click", function (e) {
       });
     });
 
+    function randomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r},${g},${b})`;
+    }
+
     allBoxes.forEach((box) => {
       box.addEventListener("mouseenter", () => {
         if (isMouseDown) {
           box.setAttribute(
             "style",
-            "background-color: black; display: flex; flex: 1; height: 100%; border: 1px solid black;"
+            `background-color: ${randomColor()}; display: flex; flex: 1; height: 100%; border: 1px solid black; opacity: 0.7;`
           );
         }
       });
@@ -74,7 +81,7 @@ button.addEventListener("click", function (e) {
         if (click) {
           box.setAttribute(
             "style",
-            "background-color: black; display: flex; flex: 1; height: 100%; border: 1px solid black;"
+            `background-color: ${randomColor()}; display: flex; flex: 1; height: 100%; border: 1px solid black;  opacity: 0.5;`
           );
         }
       });
