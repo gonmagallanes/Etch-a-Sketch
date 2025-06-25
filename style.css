@@ -2,39 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 body {
-  background-color: #717c89;
-}
-
-.body {
+  background-color: #b4b6b5;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-
-}
-
-header {
-  color: #adf6b1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8vh;
+  flex-direction: row;
+  height: 100vh;
 }
 
 .headerText {
-  font-size: 2em;
-  font-family: Verdana, Tahoma, sans-serif;
+  color: #1b1b1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  margin-bottom: 30px;
+  height: 8vh;
+}
+
+.inputText {
+  text-decoration: underline;
+}
+
+.input {
+  width: 100%;
+  height: 5vh;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 #container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 500px;
-  border: 1px solid black;
+  width: 35vw;
+  height: 35vw;
+  border: 10px solid #96031a;
 }
 
 .center {
@@ -42,5 +49,47 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 3vh;
+  gap: 5px;
+}
+
+.buttonsInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10vh;
+}
+
+.buttonsColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  margin-bottom: 10vh;
+}
+
+.eventButtonsInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 5vw;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: white;
+  background-color: #1b1b1e;
+}
+
+.eventButtonsColor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vw;
+  width: 5vw;
+  font-size: 1rem;
+  border-radius: 2.5vw;
+  color: white;
+  background-color: #1b1b1e;
 }

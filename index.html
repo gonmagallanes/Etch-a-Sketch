@@ -11,17 +11,20 @@
       type="image/x-icon"
     />
   </head>
-  <body class="center">
-    <header>
-      <h1 class="headerText">Etch-A-Sketch</h1>
-    </header>
-    <main class="center">
+  <body>
+    <main>
       <div class="center">
-        <label for="input">Cantidad de cuadraditos onichan?</label>
-        <input type="number" id="input" />
-        <div>
-          <button type="submit" id="button">Enviar</button>
-          <button id="reset">Reset</button>
+        <h1 class="headerText">Etch-A-Sketch</h1>
+        <label class="inputText" for="input"><h2>Grid size:</h2></label>
+        <input class="input" type="number" id="input" />
+        <div class="buttonsInput">
+          <button class="eventButtonsInput" type="submit" id="button">Apply</button>
+          <button class="eventButtonsInput" id="reset">Reset</button>
+        </div>
+        <div class="buttonsColor">
+          <h2 class="inputText">Choose color:</h2>
+          <button class="eventButtonsColor" id="rainbow">Rainbow</button>
+          <button class="eventButtonsColor" id="black">Black</button>
         </div>
       </div>
     </main>
