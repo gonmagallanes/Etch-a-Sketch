@@ -4,6 +4,7 @@ const button = document.querySelector("#button");
 const resetButton = document.querySelector("#reset");
 const rainbow = document.querySelector("#rainbow");
 const black = document.querySelector("#black");
+const gridContainer = document.querySelector("#gridContainer");
 
 for (let i = 1; i <= 10; i++) {
   const columns = document.createElement("section");
@@ -178,16 +179,16 @@ button.addEventListener("click", function (e) {
             );
           }
         });
+      });
 
-        allBoxes.forEach((box) => {
-          box.addEventListener("click", () => {
-            if (click) {
-              box.setAttribute(
-                "style",
-                `background-color: ${randomColor()}; display: flex; flex: 1; height: 100%; border: 1px solid black;`
-              );
-            }
-          });
+      allBoxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          if (click) {
+            box.setAttribute(
+              "style",
+              `background-color: ${randomColor()};; display: flex; flex: 1; height: 100%; border: 1px solid black;`
+            );
+          }
         });
       });
     });
@@ -216,6 +217,10 @@ button.addEventListener("click", function (e) {
       });
     });
   } else {
-    alert("cuidado boludito");
+    const p = document.createElement("p");
+    p.textContent = "The grid size has to be between 1 and 100";
+    p.setAttribute("style", "color: #96031a")
+    gridContainer.appendChild(p)
+    gridContainer.setAttribute("style", "display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1vh; padding-bottom: 1vh")
   }
 });
