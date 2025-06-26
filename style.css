@@ -80,6 +80,7 @@ body {
   border-radius: 10px;
   color: white;
   background-color: #1b1b1e;
+  padding: 1vw;
 }
 
 .eventButtonsColor {
@@ -92,4 +93,6 @@ body {
   border-radius: 2.5vw;
   color: white;
   background-color: #1b1b1e;
+
+  padding: 3vw;
 }
