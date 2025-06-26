@@ -5,6 +5,7 @@ const resetButton = document.querySelector("#reset");
 const rainbow = document.querySelector("#rainbow");
 const black = document.querySelector("#black");
 const gridContainer = document.querySelector("#gridContainer");
+const removeP = document.querySelectorAll("p")
 
 for (let i = 1; i <= 10; i++) {
   const columns = document.createElement("section");
@@ -137,6 +138,7 @@ button.addEventListener("click", function (e) {
         "display: flex; justify-content: center; align-items: center; border: 10px solid #96031A; margin: 5px; width: 35vw; height: 35vw; flex-direction: column;"
       );
       document.body.appendChild(container);
+      
     }
 
     document.addEventListener("mousedown", () => {
@@ -216,7 +218,11 @@ button.addEventListener("click", function (e) {
         });
       });
     });
+    
+    gridContainer.innerHTML = `<label class="inputText" for="input"><h2>Grid size:</h2></label>`
+   
   } else {
+    gridContainer.innerHTML = `<label class="inputText" for="input"><h2>Grid size:</h2></label>`
     const p = document.createElement("p");
     p.textContent = "The grid size has to be between 1 and 100";
     p.setAttribute("style", "color: #96031a")
